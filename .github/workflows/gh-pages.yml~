@@ -22,11 +22,11 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: mkdir dist && cd java-deep-dive && hugo --minify && mv public ../dist/java-deep-dive && cd ..
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          folder: dist # The folder the action should deploy.
           token: ${{ secrets.GITHUB_TOKEN }}
