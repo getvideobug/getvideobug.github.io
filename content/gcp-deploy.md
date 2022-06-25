@@ -13,7 +13,7 @@ draft: true
 
 
 1. create a new service account
-2. with perission roles/storage.objectAdmin (access to google cloud storage)
+2. with permission roles/storage.objectAdmin (access to google cloud storage)
 3. generate HMAC keys
 
 ```bash
