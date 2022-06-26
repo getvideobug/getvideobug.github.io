@@ -1,20 +1,16 @@
 ---
-title: "Deploying on GCP with chef"
+title: "Using Google Deployment Manager (~5 mins)"
 date: 2022-05-12T12:58:07+05:30
 draft: false
 ---
 
 
-
-## Using Google Deployment Manager (~5 mins)
-
-
 ### Service account HMAC key generation
 
 
-1. create a new service account
-2. with permission roles/storage.objectAdmin (access to google cloud storage)
-3. generate HMAC keys
+- Create a new service account 
+- With permission roles/storage.objectAdmin (access to google cloud storage)
+- Generate HMAC keys
 
 ```bash
 
@@ -52,7 +48,7 @@ Get Public IP
 ```bash
 gcloud compute addresses describe  --global videobug-public-ip
 
-address: 35.111.45.162
+address: 35.111.22.333
 addressType: EXTERNAL
 creationTimestamp: '2022-05-31T23:44:53.432-07:00'
 description: ''
