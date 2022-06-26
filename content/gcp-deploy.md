@@ -1,7 +1,7 @@
 ---
 title: "Deploying on GCP with chef"
 date: 2022-05-12T12:58:07+05:30
-draft: true
+draft: false
 ---
 
 
